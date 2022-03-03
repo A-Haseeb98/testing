@@ -1,0 +1,35 @@
+
+  .interior_container{
+      position: relative;
+  }
+  .cover_container{
+    width: 100%;
+    position: relative; 
+    overflow: none !important; 
+  
+  }
+  .cover_container img{
+    width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform ease 400ms;
+  }     
+  .plane_i{
+    z-index: 222 !important;
+  }
+  .plane_i:hover{
+    transform: translate(50px, -20px);
+  }
+  .plane_i:hover ~ img{
+    filter: grayscale(100%);
+  }
+  
+  /* .fan {
+    z-index: 333;
+  }
+  .fan:hover ~ img {
+  }  */
+  
+  

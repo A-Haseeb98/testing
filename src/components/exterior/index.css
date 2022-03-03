@@ -1,0 +1,47 @@
+.head{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .ex_container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .ex_container img.orginal{
+    width: 100%;    
+  }
+  
+  .ex_container img.lap,.ex_container img.plane  {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+   .ex_container img.plane:hover ~ img.lap {
+    background-color: saddlebrown;
+  }
+  .hover{
+    transition: transform ease 1200ms;
+    transform: translate(500px, -100px);
+  }
+  .no_hover{
+    transition: transform ease 1200ms;
+    transform: translate(0px, 0px);
+  }
+
+  .ex_container .polygon{
+    background-color: transparent;
+    width: 18%;
+    height: 10.5%;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    bottom: 22%;
+    right: 6%;
+    cursor: pointer;
+  }
+  
