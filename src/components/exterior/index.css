@@ -45,6 +45,12 @@
     right: 6%;
     cursor: pointer;
   }
+
+  .ex_container .polygon a{
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+  }
   .containr_clas_animate{
     animation-name: fadeOut;
     animation-duration: 1s;
