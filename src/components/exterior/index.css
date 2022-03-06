@@ -27,6 +27,7 @@
   .hover{
     transition: transform ease 1200ms;
     transform: translate(500px, -100px);
+  
   }
   .no_hover{
     transition: transform ease 1200ms;
@@ -43,5 +44,9 @@
     bottom: 22%;
     right: 6%;
     cursor: pointer;
+  }
+  .containr_clas_animate{
+    animation-name: fadeOut;
+    animation-duration: 1s;
   }
   

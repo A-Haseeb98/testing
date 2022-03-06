@@ -1,23 +1,27 @@
 
   .interior_container{
       position: relative;
+      overflow: hidden;
   }
-  .cover_container{
+  .cover_container_int{
     width: 100%;
     position: relative; 
-    overflow: none !important; 
+    animation-name: fadeIn;
+    animation-duration: 1.25s;
   
   }
-  .cover_container img{
+  .cover_container_int img{
     width: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     transition: transform ease 400ms;
-  }     
+  }
+  .main_background{
+      position: static !important;
+  }
   .plane_i{
-    z-index: 222 !important;
   }
   .plane_i:hover{
     transform: translate(50px, -20px);
@@ -25,11 +29,65 @@
   .plane_i:hover ~ img{
     filter: grayscale(100%);
   }
-  
-  /* .fan {
-    z-index: 333;
+
+  .plane_hover_box{
+      width: 17%;
+      height: 10%;
+      position: absolute;
+      top: 26.6%;
+      left: 25.5%;
+      z-index: 22; 
+       transform: rotate(5deg);
+       -ms-transform: rotate(5deg); /* IE 9 */
+
+       cursor: pointer;
   }
-  .fan:hover ~ img {
-  }  */
+  .plane_hover_box:hover ~ img.plane_i{
+    transform: translate(50px, -25px);
+    }
+    .suitcase_hover_box{
+        /* border: 2px solid black; */
+        width: 9%;
+        height: 11.5%;
+        position: absolute;
+        bottom: 17%;
+        right: 15.5%;
+        z-index: 22; 
+        transform: rotate(-3deg);
+        -ms-transform: rotate(-3deg); /* IE 9 */
+        cursor: pointer;
+    }
+    .suitcase_hover_box:hover ~ img{
+        filter: grayscale(100%);
+      }
+      .suitcase_hover_box:hover ~ img.suit_case{
+        filter: grayscale(0);
   
-  
+    }
+
+    .departure_hover_box{
+        border: 2px solid black;
+        width: 10.5%;
+        height: 5%;
+        position: absolute;
+        top: 6.1%;
+        left: 47.5%;
+        z-index: 22;
+        transform: rotate(-5.7deg);
+        -ms-transform: rotate(-5.7deg); /* IE 9 */
+        cursor: pointer;  
+    }
+    .departure_hover_box a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text_container{
+        background-color: black;
+        color: white;
+        margin-top: 1500px;
+        padding: 100px;
+        text-align: center;
+        font-size: 60px;
+    }

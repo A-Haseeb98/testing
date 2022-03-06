@@ -18,23 +18,32 @@ import Q16 from '../../assets/images/Q16.png'
 import Q17 from '../../assets/images/Q17.png'
 import Q18 from '../../assets/images/Q18.png'
 import Q19 from '../../assets/images/Q19.png'
-
+import { HashLink } from 'react-router-hash-link';
+import { useState } from 'react'
 import './index.css'
-function Interior() {
 
+function Interior() {
     return (
         <div className="interior_container">
-            <div className='cover_container'>
-            <img className='plane_i' src={Q6} alt='Q' />
+            <div className='cover_container_int'>
+                <div className='plane_hover_box'>
+                </div>
+                <div className='suitcase_hover_box'>
+                </div>
+                
+                <div className='departure_hover_box'>
+                <HashLink smooth to="/home/#demo"></HashLink>
 
-                <img src={Q19} alt='Q' />
+                </div>
+                <img className='main_background' src={Q19} alt='Q' />
+                <img className='plane_i' src={Q6} alt='Q' />
                 <img className='fan' src={Q18} alt='Q' />
                 <img src={Q17} alt='Q' />
                 <img src={Q16} alt='Q' />
                 <img src={Q15} alt='Q' />
                 <img src={Q14} alt='Q' />
                 <img src={Q13} alt='Q' />
-                <img src={Q12} alt='Q' />
+                <img className='suit_case' src={Q12} alt='Q' />
                 <img src={Q11} alt='Q' />
                 <img src={Q10} alt='Q' />
                 <img src={Q9} alt='Q' />
@@ -45,7 +54,9 @@ function Interior() {
                 <img src={Q3} alt='Q' />
                 <img src={Q2} alt='Q' />
                 <img src={Q1} alt='Q' />
-
+            </div>
+            <div id='demo' className='text_container'>
+                hello
             </div>
         </div>
     );
